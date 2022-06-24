@@ -51,8 +51,8 @@ function updateLS() {
   let todos = [];
   todoEls.forEach((todoEl) => {
     todos.push({
-      text: todoEl.text,
-      icCompleted: todoEl.classList.contains("completed"),
+      text: todoEl.innerText,
+      isCompleted: todoEl.classList.contains("completed"),
     });
   });
 
